@@ -1,0 +1,12 @@
+{
+  "watchers": [
+    {
+      "extension": "styl",
+      "tasks": [
+        {
+          "command": "make stylus"
+        }
+      ]
+    }
+  ]
+}

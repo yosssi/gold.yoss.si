@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  header.title
+    .header-innter
+      h1 Gold
+      p Template engine for Go
+  section.sample
+    .sample-inner
+      pre
+        code
+          span.tag doctype
+          | {{" html"}}
+          br
+          span.tag html
+          | {{" lang=en"}}
+          br
+          span.tag {{"  head"}}
+          br
+          span.tag {{"    title"}}
+          | {{" {{.Title}}"}}
+          br
+          span.tag {{"  body"}}
+          br
+          span.tag {{"    h1"}}
+          | {{" Gold - Template engine for Go"}}
+          br
+          span.elem-id {{"    #container"}}
+          span.elem-class {{".wrapper"}}
+          br
+          |       {{"{{if true}}"}}
+          br
+          span.tag {{"        p "}}
+          | You can use an expression of Go text/template package.
+          br
+          |       {{"{{end}}"}}
+          br
+          span.tag {{"      p. "}}
+          br
+          |         Gold is a template engine for Go.
+          br
+          |         This simplifies HTML coding in web app development.
+          br
+          span.tag-script {{"    javascript:"}}
+          br
+          |       var msg = 'Welcome to Gold!';
+          br
+          |       alert(msg);
+  section.github
+    .github-inner
+      p For more details
+      .github-icon
+        a href="https://github.com/yosssi/gold"
+          i.fa.fa-github

@@ -1,0 +1,13 @@
+doctype html
+html lang=en
+  head
+    meta charset=utf-8
+    meta name=viewport content=width=device-width,user-scalable=no,maximum-scale=1
+    meta name=description content="Gold - Template engine for Go"
+    meta name=keywords content="go golang gold template engine html slim jade"
+    title {{.Title}}
+    link rel="shortcut icon" type=image/x-icon href="img/favicon.ico"
+    link rel=stylesheet type=text/css href=css/style.css media=screen
+    link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
+  body
+    block content

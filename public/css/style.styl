@@ -1,0 +1,98 @@
+@charset 'utf-8'
+
+font-family()
+  font-family: Roboto, sans-serif
+
+radius()
+  -webkit-border-radius arguments
+  -ms-border-radius arguments
+  -o-border-radius arguments
+  border-radius arguments
+
+transition()
+  -webkit-transition-property arguments
+  -webkit-transition-duration .2s
+  -webkit-transition-timing-function ease-in
+  -moz-transition-property arguments
+  -moz-transition-duration .2s
+  -moz-transition-timing-function ease-in
+  -o-transition-property arguments
+  -o-transition-duration .2s
+  -o-transition-timing-function ease-in
+
+body, h1, h2, h3, h4, h5, h6, a, img, form, input, header, footer, dl, dt, dd, li, ul, select, section, div, video, p, button, textarea, pre, code
+  margin 0
+  padding 0
+html
+  font-family()
+  font-size 65%
+  line-height 1.5
+  height 100%
+body
+  min-height 100%
+  height 100%
+header.title
+  background #fffbea
+  color #e85531
+  .header-innter
+    padding 14rem 0
+    h1
+      text-align center
+      font-size 7rem
+    p
+      text-align center
+      font-size 3rem
+      font-weight bold
+section.sample
+  background #2b2b2b
+  color white
+  padding 4rem 0
+  .sample-inner
+    margin 0 auto
+    padding 1rem
+    width 90%
+    vertical-align top
+    pre
+      font-family()
+      font-size 1.5rem
+      line-height 110%
+      overflow-x scroll
+section.github
+  background #5097c7
+  color white
+  padding 4rem 0
+  .github-inner
+    margin 0 auto
+    padding 1rem
+    width 90%
+    vertical-align top
+    p
+      font-size 3rem
+      font-weight bold
+      text-align center
+.tag
+  color #ffbb00
+.elem-id, .tag-script
+  color #22dfff
+.elem-class
+  color #7cfc00
+.github-icon
+  text-align center
+  font-size 8rem
+  a
+    color white
+    transition color
+    &:hover
+      color yellow
+@media screen and (min-width: 768px)
+  html
+    font-size 90%
+  section.sample
+    .sample-inner
+      width 70%
+      pre
+        font-size 1.2rem
+        line-height 110%
+  section.github
+    .github-inner
+      width 70%
