@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-martini/martini"
 	"github.com/martini-contrib/render"
 	"github.com/yosssi/rendergold"
+	"github.com/yosssi/staticbin"
 )
 
 var (
@@ -21,7 +21,7 @@ var (
 // main executes main processes.
 func main() {
 	setStringTemplate()
-	m := martini.Classic()
+	m := staticbin.Classic(Asset)
 	m.Use(rendergold.Renderer())
 	m.Get("/", func(r render.Render) {
 		r.HTML(
