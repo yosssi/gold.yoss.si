@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/martini-contrib/render"
+	"github.com/martini-contrib/staticbin"
 	"github.com/yosssi/rendergold"
-	"github.com/yosssi/staticbin"
 )
 
 // main executes main processes.
