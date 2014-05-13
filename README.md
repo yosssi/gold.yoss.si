@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-$ go get github.com/yosssi/gold.yoss.si
+$ go get -u github.com/yosssi/gold.yoss.si
 ```
 
 ## Execution
