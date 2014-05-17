@@ -4,7 +4,6 @@ package main
 import (
 	"net/http"
 
-	"github.com/martini-contrib/render"
 	"github.com/martini-contrib/staticbin"
 	"github.com/yosssi/rendergold"
 )
@@ -13,7 +12,7 @@ import (
 func main() {
 	m := staticbin.Classic(Asset)
 	m.Use(rendergold.Renderer(rendergold.Options{Asset: Asset}))
-	m.Get("/", func(r render.Render) {
+	m.Get("/", func(r rendergold.Render) {
 		r.HTML(
 			http.StatusOK,
 			"top",
